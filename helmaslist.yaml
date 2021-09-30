@@ -9,7 +9,7 @@ items:
       labels:
         app: location-extractor
       name: location-extractor
-      namespace: localnews
+      namespace: admin-che
     spec:
       ports:
         - port: 8081
@@ -22,7 +22,7 @@ items:
       labels:
         app: news-backend
       name: news-backend
-      namespace: localnews
+      namespace: admin-che
     spec:
       type: NodePort
       ports:
@@ -37,7 +37,7 @@ items:
       labels:
         app: news-frontend
       name: news-frontend
-      namespace: localnews
+      namespace: admin-che
     spec:
       ports:
         - port: 80
@@ -52,7 +52,7 @@ items:
       labels:
         app: postgis
       name: postgis
-      namespace: localnews
+      namespace: admin-che
     spec:
       ports:
         - port: 5400
@@ -63,7 +63,7 @@ items:
     kind: Deployment
     metadata:
       name: feed-scraper
-      namespace: localnews
+      namespace: admin-che
     spec:
       replicas: 1
       selector:
@@ -89,7 +89,7 @@ items:
       labels:
         app: location-extractor
       name: location-extractor
-      namespace: localnews
+      namespace: admin-che
     spec:
       replicas: 1
       selector:
@@ -111,7 +111,7 @@ items:
       labels:
         app: news-backend
       name: news-backend
-      namespace: localnews
+      namespace: admin-che
     spec:
       replicas: 1
       selector:
@@ -139,7 +139,7 @@ items:
       labels:
         app: news-frontend
       name: news-frontend
-      namespace: localnews
+      namespace: admin-che
     spec:
       replicas: 1
       selector:
@@ -162,7 +162,7 @@ items:
       labels:
         app: postgis
       name: postgis
-      namespace: localnews
+      namespace: admin-che
     spec:
       replicas: 1
       selector:
