@@ -15,7 +15,7 @@ items:
         - port: 8081
           targetPort: 80
       selector:
-        app: location_extractor
+        app: location-extractor
   - apiVersion: v1
     kind: Service
     metadata:
@@ -101,7 +101,7 @@ items:
             app: location-extractor
         spec:
           containers:
-            - image: quay.io/k8snativedev/location-extractor
+            - image: quay.io/k8snativedev/location_extractor
               name: location-extractor
               imagePullPolicy: Always
               ports:
