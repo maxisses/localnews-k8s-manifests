@@ -101,7 +101,7 @@ items:
             app: location-extractor
         spec:
           containers:
-            - image: quay.io/k8snativedev/location_extractor
+            - image: nginx
               name: location-extractor
               imagePullPolicy: Always
               ports:
