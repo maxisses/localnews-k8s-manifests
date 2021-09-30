@@ -155,7 +155,7 @@ items:
               imagePullPolicy: Always
               name: news-frontend
               ports:
-                - containerPort: 80
+                - containerPort: 8080
   - apiVersion: apps/v1
     kind: Deployment
     metadata:
